@@ -13,20 +13,20 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        // ✅ Start Selenium (make sure ChromeDriver is installed)
+        // Start Selenium (make sure ChromeDriver is installed)
         WebDriver driver = new ChromeDriver();
 
         try {
-            // ✅ Product URLs to scrape
+            // Product URLs to scrape
             List<String> urls = Arrays.asList(
                     "https://www.amazon.in/dp/B0F3XGBH79/",
                     "https://www.amazon.in/dp/B0DGHYPFYB/"
             );
 
-            // ✅ Scraper instance
+            // Scraper instance
             AmazonScraper scraper = new AmazonScraper();
 
-            // ✅ Loop through all product URLs
+            // Loop through all product URLs
             for (String url : urls) {
                 scraper.scrapeProduct(driver, url);
             }

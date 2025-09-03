@@ -10,9 +10,9 @@ import java.sql.PreparedStatement;
  * Using SQLite for simplicity (local file: scraper.db).
  */
 public class Database {
-    private static final String DB_URL = "jdbc:sqlite:scraper.db"; // ✅ Local SQLite DB file
+    private static final String DB_URL = "jdbc:sqlite:scraper.db"; // Local SQLite DB file
 
-    // ✅ Create "products" table once when the class is loaded
+    // Create "products" table once when the class is loaded
     static {
         try (Connection conn = DriverManager.getConnection(DB_URL);
              PreparedStatement stmt = conn.prepareStatement(
@@ -30,9 +30,7 @@ public class Database {
         }
     }
 
-    /**
-     * ✅ Insert scraped Amazon product into DB
-     */
+    // Insert scraped Amazon product into DB
     public static void insertProduct(String url, String name, String price, String rating) {
         String sql = "INSERT INTO products(url, name, price, rating) VALUES (?, ?, ?, ?)";
         try (Connection conn = DriverManager.getConnection(DB_URL);
