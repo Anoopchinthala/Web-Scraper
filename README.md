@@ -39,10 +39,10 @@ A Java-based web scraper that extracts **Amazon product details** (title, price,
 
 ## Output
 
---- Product ---
-URL: https://www.amazon.in/dp/B0F3XGBH79/
-Title: Samsung Galaxy S23 5G
-Price: ₹47,999
-Rating: 4.6 out of 5 stars
-Saved product: Samsung Galaxy S23 5G
+--- Product ---  <br>
+URL: https://www.amazon.in/dp/B0F3XGBH79/ <br>
+Title: Samsung Galaxy S23 5G <br>
+Price: ₹47,999 <br>
+Rating: 4.6 out of 5 stars <br>
+Saved product: Samsung Galaxy S23 5G <br>
 
